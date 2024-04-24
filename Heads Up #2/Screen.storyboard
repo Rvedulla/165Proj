@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My View Controller-->
+        <!--HomeScreen-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="Home" id="Y6W-OH-hqX" customClass="MyViewController" customModule="Heads_Up__2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="HomeScreen" id="Y6W-OH-hqX" customClass="MyViewController" customModule="Heads_Up__2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-1199.2366412213739" y="-64.08450704225352"/>
         </scene>
-        <!--View Controller-->
+        <!--UpcomingEvents-->
         <scene sceneID="RcM-kv-6pj">
             <objects>
-                <viewController id="iD6-cb-qEK" sceneMemberID="viewController">
+                <viewController title="UpcomingEvents" id="iD6-cb-qEK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haC-VA-m7a">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="-257" y="-418"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="A2i-Xt-41M">
             <objects>
-                <viewController id="Ubn-en-91y" sceneMemberID="viewController">
+                <viewController title="Calendar" id="Ubn-en-91y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jGJ-nb-xx9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="-236" y="242"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="kkJ-B9-PNS">
             <objects>
-                <viewController id="qqW-XQ-VLt" sceneMemberID="viewController">
+                <viewController title="Settings" id="qqW-XQ-VLt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kGx-v6-mc3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
