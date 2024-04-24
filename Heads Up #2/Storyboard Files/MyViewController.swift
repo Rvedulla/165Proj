@@ -20,4 +20,7 @@ class MyViewController: UIViewController {
     }
     @IBAction func ToCalendar(_ sender: UIButton) {
     }
+    
+    @IBAction func ToMenu(_ sender: UIButton) {
+    }
 }

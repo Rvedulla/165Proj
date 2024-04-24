@@ -17,6 +17,7 @@
 		F9D76E022BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76E012BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift */; };
 		F9D76E0F2BD5BFEF00893236 /* Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D76E0E2BD5BFEF00893236 /* Screen.storyboard */; };
 		F9D76E112BD5C8A200893236 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76E102BD5C8A200893236 /* MyViewController.swift */; };
+		F9D76E142BD8E0F000893236 /* logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F9D76E132BD8E0F000893236 /* logo.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F9D76E012BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heads_Up__2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F9D76E0E2BD5BFEF00893236 /* Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Screen.storyboard; sourceTree = "<group>"; };
 		F9D76E102BD5C8A200893236 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		F9D76E132BD8E0F000893236 /* logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +102,9 @@
 		F9D76DE12BD5B92F00893236 /* Heads Up #2 */ = {
 			isa = PBXGroup;
 			children = (
+				F9D76E122BD8E0B300893236 /* Storyboard Files */,
 				F9D76DE22BD5B92F00893236 /* Heads_Up__2App.swift */,
-				F9D76E102BD5C8A200893236 /* MyViewController.swift */,
 				F9D76DE42BD5B92F00893236 /* ContentView.swift */,
-				F9D76E0E2BD5BFEF00893236 /* Screen.storyboard */,
 				F9D76DE62BD5B92F00893236 /* Item.swift */,
 				F9D76DE82BD5B93000893236 /* Assets.xcassets */,
 				F9D76DEA2BD5B93000893236 /* Preview Content */,
@@ -134,6 +135,16 @@
 				F9D76E012BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift */,
 			);
 			path = "Heads Up #2UITests";
+			sourceTree = "<group>";
+		};
+		F9D76E122BD8E0B300893236 /* Storyboard Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9D76E102BD5C8A200893236 /* MyViewController.swift */,
+				F9D76E0E2BD5BFEF00893236 /* Screen.storyboard */,
+				F9D76E132BD8E0F000893236 /* logo.PNG */,
+			);
+			path = "Storyboard Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D76E142BD8E0F000893236 /* logo.PNG in Resources */,
 				F9D76DEC2BD5B93000893236 /* Preview Assets.xcassets in Resources */,
 				F9D76DE92BD5B93000893236 /* Assets.xcassets in Resources */,
 				F9D76E0F2BD5BFEF00893236 /* Screen.storyboard in Resources */,
