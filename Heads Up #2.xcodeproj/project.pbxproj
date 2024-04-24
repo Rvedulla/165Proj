@@ -15,6 +15,8 @@
 		F9D76DF62BD5B93000893236 /* Heads_Up__2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76DF52BD5B93000893236 /* Heads_Up__2Tests.swift */; };
 		F9D76E002BD5B93000893236 /* Heads_Up__2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76DFF2BD5B93000893236 /* Heads_Up__2UITests.swift */; };
 		F9D76E022BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76E012BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift */; };
+		F9D76E0F2BD5BFEF00893236 /* Storyboard UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D76E0E2BD5BFEF00893236 /* Storyboard UI.storyboard */; };
+		F9D76E112BD5C8A200893236 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76E102BD5C8A200893236 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		F9D76DFB2BD5B93000893236 /* Heads Up #2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heads Up #2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D76DFF2BD5B93000893236 /* Heads_Up__2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heads_Up__2UITests.swift; sourceTree = "<group>"; };
 		F9D76E012BD5B93000893236 /* Heads_Up__2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heads_Up__2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9D76E0E2BD5BFEF00893236 /* Storyboard UI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Storyboard UI.storyboard"; sourceTree = "<group>"; };
+		F9D76E102BD5C8A200893236 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				F9D76DE22BD5B92F00893236 /* Heads_Up__2App.swift */,
+				F9D76E102BD5C8A200893236 /* MyViewController.swift */,
 				F9D76DE42BD5B92F00893236 /* ContentView.swift */,
+				F9D76E0E2BD5BFEF00893236 /* Storyboard UI.storyboard */,
 				F9D76DE62BD5B92F00893236 /* Item.swift */,
 				F9D76DE82BD5B93000893236 /* Assets.xcassets */,
 				F9D76DEA2BD5B93000893236 /* Preview Content */,
@@ -236,6 +242,7 @@
 			files = (
 				F9D76DEC2BD5B93000893236 /* Preview Assets.xcassets in Resources */,
 				F9D76DE92BD5B93000893236 /* Assets.xcassets in Resources */,
+				F9D76E0F2BD5BFEF00893236 /* Storyboard UI.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +269,7 @@
 			files = (
 				F9D76DE52BD5B92F00893236 /* ContentView.swift in Sources */,
 				F9D76DE72BD5B92F00893236 /* Item.swift in Sources */,
+				F9D76E112BD5C8A200893236 /* MyViewController.swift in Sources */,
 				F9D76DE32BD5B92F00893236 /* Heads_Up__2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
