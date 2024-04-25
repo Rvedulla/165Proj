@@ -23,4 +23,6 @@ class MyViewController: UIViewController {
     
     @IBAction func ToMenu(_ sender: UIButton) {
     }
+    @IBAction func ToTest(_ sender: UIButton) {
+    }
 }
