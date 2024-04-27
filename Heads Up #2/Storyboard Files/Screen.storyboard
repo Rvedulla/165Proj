@@ -11,7 +11,7 @@
         <!--HomeScreen-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="Home" title="HomeScreen" id="Y6W-OH-hqX" customClass="MyViewController" customModule="Heads_Up__2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="HomeScreen" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="MyViewController" customModule="Heads_Up__2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,16 +20,6 @@
                                 <rect key="frame" x="16" y="555" width="356" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-k4-mRD">
-                                <rect key="frame" x="117" y="450" width="158" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Upcoming Events"/>
-                                <connections>
-                                    <action selector="ToUpcomingEvents:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YXy-38-DzP"/>
-                                    <segue destination="iD6-cb-qEK" kind="show" id="jRA-sm-kyi"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heads Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a52-hc-Q20">
                                 <rect key="frame" x="125" y="153" width="146" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,29 +40,23 @@
                                     <segue destination="qqW-XQ-VLt" kind="showDetail" id="ObP-tp-VdI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7r-cR-dTr">
-                                <rect key="frame" x="170" y="332" width="57" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Test"/>
-                                <connections>
-                                    <action selector="ToTest:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="G2z-UL-suw"/>
-                                    <segue destination="IBc-Bj-M9y" kind="popoverPresentation" popoverAnchorView="k7r-cR-dTr" id="wBH-Nu-jvq">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-gw-fEZ">
-                                <rect key="frame" x="-2" y="226" width="393" height="79"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH5-bP-Uux">
-                                <rect key="frame" x="152" y="555" width="93" height="35"/>
+                                <rect key="frame" x="152" y="512" width="93" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calendar"/>
                                 <connections>
                                     <segue destination="eNL-nP-QE9" kind="show" id="6tg-dC-5e9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-k4-mRD">
+                                <rect key="frame" x="119" y="409" width="158" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upcoming Events"/>
+                                <connections>
+                                    <action selector="ToUpcomingEvents:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YXy-38-DzP"/>
+                                    <segue destination="iD6-cb-qEK" kind="show" id="jRA-sm-kyi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,6 +65,7 @@
                         <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4y0-2e-2Od"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -91,22 +76,21 @@
         <!--Calendar-->
         <scene sceneID="yDz-6e-14E">
             <objects>
-                <viewController title="Calendar" id="eNL-nP-QE9" sceneMemberID="viewController">
+                <viewController title="Calendar" modalPresentationStyle="fullScreen" id="eNL-nP-QE9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="chn-1Z-JOv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSC-y5-IMy" customClass="FSCalendar">
-                                <rect key="frame" x="16" y="196" width="361" height="573"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxR-Gi-pfx">
+                                <rect key="frame" x="120" y="120" width="153" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Calendar" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8S-yJ-Bdu">
-                                <rect key="frame" x="148" y="121" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Heads Up"/>
+                                <connections>
+                                    <action selector="Title2:" destination="dM7-Vn-oF1" eventType="touchUpInside" id="X83-8M-gXQ"/>
+                                    <segue destination="Y6W-OH-hqX" kind="show" id="lcn-Xs-4sb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ahM-qK-m3N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,12 +99,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbh-Yq-iRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237.40458015267174" y="300.7042253521127"/>
+            <point key="canvasLocation" x="1825" y="738"/>
         </scene>
         <!--UpcomingEvents-->
         <scene sceneID="RcM-kv-6pj">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" title="UpcomingEvents" id="iD6-cb-qEK" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" title="UpcomingEvents" modalPresentationStyle="fullScreen" id="iD6-cb-qEK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haC-VA-m7a">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,6 +116,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Heads Up"/>
                                 <connections>
                                     <action selector="Title2:" destination="dM7-Vn-oF1" eventType="touchUpInside" id="wlY-y1-5Pz"/>
+                                    <segue destination="Y6W-OH-hqX" kind="show" id="pzx-s7-q7s"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPCOMING EVENTS" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjQ-dP-AEY">
@@ -149,38 +134,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAK-MF-L9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="dM7-Vn-oF1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-257.25190839694653" y="-418.3098591549296"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="LcB-P8-E7V">
-            <objects>
-                <viewController id="IBc-Bj-M9y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nWn-cm-pSW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="r7P-UT-dRp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d1H-sz-Dne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-257" y="-1181"/>
+            <point key="canvasLocation" x="2367" y="-458"/>
         </scene>
         <!--Menu-->
         <scene sceneID="kkJ-B9-PNS">
             <objects>
-                <viewController title="Menu" id="qqW-XQ-VLt" sceneMemberID="viewController">
+                <viewController title="Menu" modalPresentationStyle="fullScreen" id="qqW-XQ-VLt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kGx-v6-mc3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWZ-os-SCO">
-                                <rect key="frame" x="158" y="120" width="76" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-Sw-I2f">
+                                <rect key="frame" x="120" y="79" width="153" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Heads Up"/>
+                                <connections>
+                                    <action selector="Title2:" destination="dM7-Vn-oF1" eventType="touchUpInside" id="uFx-jm-Vxx"/>
+                                    <segue destination="Y6W-OH-hqX" kind="show" id="naS-LQ-9Oj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gTQ-6S-gtA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -188,16 +161,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HjA-41-sm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237.40458015267174" y="1114.7887323943662"/>
+            <point key="canvasLocation" x="302" y="1425"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="naS-LQ-9Oj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="logo.PNG" width="504" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
