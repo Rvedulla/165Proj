@@ -6,13 +6,13 @@
 //
 
 import Foundation
-
+import FSCalendar
 import UIKit
 
 
 class MyViewController: UIViewController {
     
-
+    @IBOutlet weak var calendar: FSCalendar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
