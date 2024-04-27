@@ -91,6 +91,11 @@
                                     <segue destination="Y6W-OH-hqX" kind="show" id="lcn-Xs-4sb"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-hw-ZKv" customClass="FSCalendar">
+                                <rect key="frame" x="16" y="163" width="361" height="606"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ahM-qK-m3N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -99,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbh-Yq-iRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="738"/>
+            <point key="canvasLocation" x="1823.6641221374045" y="737.32394366197184"/>
         </scene>
         <!--UpcomingEvents-->
         <scene sceneID="RcM-kv-6pj">
@@ -119,12 +124,6 @@
                                     <segue destination="Y6W-OH-hqX" kind="show" id="pzx-s7-q7s"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UPCOMING EVENTS" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjQ-dP-AEY">
-                                <rect key="frame" x="50" y="158" width="293" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ECC-HF-x1e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,7 +164,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="naS-LQ-9Oj"/>
+        <segue reference="pzx-s7-q7s"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo.PNG" width="504" height="360"/>
