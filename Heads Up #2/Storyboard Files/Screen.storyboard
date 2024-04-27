@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxR-Gi-pfx">
-                                <rect key="frame" x="120" y="120" width="153" height="35"/>
+                                <rect key="frame" x="120" y="84" width="153" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Heads Up"/>
@@ -92,10 +92,17 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-hw-ZKv" customClass="FSCalendar">
-                                <rect key="frame" x="16" y="163" width="361" height="606"/>
+                                <rect key="frame" x="16" y="206" width="361" height="606"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMi-g2-y9x">
+                                <rect key="frame" x="74" y="143" width="245" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ahM-qK-m3N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,6 +131,13 @@
                                     <segue destination="Y6W-OH-hqX" kind="show" id="pzx-s7-q7s"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upcoming Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEW-fU-TcG">
+                                <rect key="frame" x="53" y="131" width="286" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ECC-HF-x1e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,7 +147,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAK-MF-L9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="dM7-Vn-oF1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2367" y="-458"/>
+            <point key="canvasLocation" x="2365.6488549618321" y="-458.45070422535213"/>
         </scene>
         <!--Menu-->
         <scene sceneID="kkJ-B9-PNS">
@@ -153,6 +167,13 @@
                                     <segue destination="Y6W-OH-hqX" kind="show" id="naS-LQ-9Oj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebe-7Z-ez2">
+                                <rect key="frame" x="93" y="135" width="208" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gTQ-6S-gtA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -160,11 +181,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HjA-41-sm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="1425"/>
+            <point key="canvasLocation" x="301.52671755725191" y="1424.6478873239437"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pzx-s7-q7s"/>
+        <segue reference="lcn-Xs-4sb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo.PNG" width="504" height="360"/>
@@ -172,7 +193,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
