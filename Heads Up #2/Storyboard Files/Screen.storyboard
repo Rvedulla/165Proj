@@ -76,7 +76,7 @@
         <!--Calendar-->
         <scene sceneID="yDz-6e-14E">
             <objects>
-                <viewController title="Calendar" modalPresentationStyle="fullScreen" id="eNL-nP-QE9" sceneMemberID="viewController">
+                <viewController title="Calendar" id="eNL-nP-QE9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="chn-1Z-JOv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,12 +92,12 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GN-hw-ZKv" customClass="FSCalendar">
-                                <rect key="frame" x="16" y="206" width="361" height="606"/>
+                                <rect key="frame" x="16" y="227" width="361" height="585"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMi-g2-y9x">
-                                <rect key="frame" x="74" y="143" width="245" height="36"/>
+                                <rect key="frame" x="74" y="183" width="245" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -109,12 +109,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="2GT-vP-Mgn"/>
                     <connections>
-                        <outlet property="view" destination="2GN-hw-ZKv" id="zcF-wf-bpM"/>
+                        <outlet property="view" destination="2GN-hw-ZKv" id="Ttr-BX-qFq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbh-Yq-iRc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="546"/>
+            <point key="canvasLocation" x="597.70992366412213" y="545.77464788732402"/>
         </scene>
         <!--UpcomingEvents-->
         <scene sceneID="RcM-kv-6pj">
@@ -335,7 +335,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="naS-LQ-9Oj"/>
+        <segue reference="lcn-Xs-4sb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo.PNG" width="504" height="360"/>
@@ -343,7 +343,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
