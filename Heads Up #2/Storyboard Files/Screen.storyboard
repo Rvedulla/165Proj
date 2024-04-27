@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="f6k-8Y-SIH">
-                                <rect key="frame" x="16" y="555" width="356" height="214"/>
+                                <rect key="frame" x="16" y="555" width="361" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heads Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a52-hc-Q20">
@@ -59,6 +59,16 @@
                                     <segue destination="iD6-cb-qEK" kind="show" id="jRA-sm-kyi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-aj-fJ3">
+                                <rect key="frame" x="89" y="616" width="214" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="P3O-T3-ZbZ" kind="show" id="r5T-9T-7JL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,7 +81,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="GJd-bc-tLt"/>
             </objects>
-            <point key="canvasLocation" x="-1079" y="-11"/>
+            <point key="canvasLocation" x="-1080.1526717557251" y="-11.267605633802818"/>
+        </scene>
+        <!--Collection-->
+        <scene sceneID="H9J-bN-gma">
+            <objects>
+                <viewController title="Collection" modalPresentationStyle="fullScreen" keyboardType="off" id="P3O-T3-ZbZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5S-DV-Qnb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyM-hd-OcC">
+                                <rect key="frame" x="58" y="87" width="276" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Leave the experience"/>
+                                <connections>
+                                    <segue destination="Y6W-OH-hqX" kind="show" id="vn9-C8-XS7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sYl-jn-rSU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gkW-hP-bjE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55l-iG-BW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-819" y="867"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="yDz-6e-14E">
@@ -335,7 +372,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lcn-Xs-4sb"/>
+        <segue reference="vn9-C8-XS7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="logo.PNG" width="504" height="360"/>
