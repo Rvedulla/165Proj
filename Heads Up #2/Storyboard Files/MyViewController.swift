@@ -28,11 +28,9 @@ class MyViewController: UIViewController {
     }
     @IBAction func TOCalendar(_ sender: UIButton) {
     }
-    
     @IBAction func ToMenu(_ sender: UIButton) {
     }
-    @IBAction func ToTest(_ sender: UIButton) {
-    }
+    
     
     
 
