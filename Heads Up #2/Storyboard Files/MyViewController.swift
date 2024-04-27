@@ -9,20 +9,33 @@ import Foundation
 
 import UIKit
 
+
 class MyViewController: UIViewController {
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Setup code here
         
+  
+        
     }
+    
+   
     
     @IBAction func ToUpcomingEvents(_ sender: UIButton) {
     }
-    @IBAction func ToCalendar(_ sender: UIButton) {
+    @IBAction func TOCalendar(_ sender: UIButton) {
     }
     
     @IBAction func ToMenu(_ sender: UIButton) {
     }
     @IBAction func ToTest(_ sender: UIButton) {
     }
+    
+    
+
 }
+
+
