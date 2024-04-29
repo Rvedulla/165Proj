@@ -10,6 +10,7 @@ import FSCalendar
 import UIKit
 
 
+
 class MyViewController: UIViewController, FSCalendarDelegate{
     
     
@@ -29,8 +30,22 @@ class MyViewController: UIViewController, FSCalendarDelegate{
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print("Date selected: \(date)")
-    }
+           // Create a date formatter to format the selected date
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateStyle = .long
+           let formattedDate = dateFormatter.string(from: date)
+
+           // Create an alert controller
+           let alert = UIAlertController(title: "Date Selected",
+                                         message: "You selected \(formattedDate)",
+                                         preferredStyle: .alert)
+
+           // Add an action to dismiss the alert
+           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+           // Present the alert
+           present(alert, animated: true, completion: nil)
+       }
 
     
     
