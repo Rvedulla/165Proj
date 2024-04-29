@@ -11,6 +11,7 @@ import UIKit
 
 
 
+
 class MyViewController: UIViewController, FSCalendarDelegate{
     
     
@@ -23,7 +24,7 @@ class MyViewController: UIViewController, FSCalendarDelegate{
         super.viewDidLoad()
         // Setup code here
         if let calendar = calendar {
-                calendar.delegate = self
+            calendar.delegate = self
             calendar.isUserInteractionEnabled = true
             // Header customization
             calendar.appearance.headerMinimumDissolvedAlpha = 0.0  // Fully visible navigation arrows
@@ -34,36 +35,26 @@ class MyViewController: UIViewController, FSCalendarDelegate{
             calendar.appearance.weekdayFont = UIFont.boldSystemFont(ofSize: 16)  // Bold weekday font
             calendar.swipeToChooseGesture.isEnabled = true  // Enable swipe gestures
             calendar.scrollDirection = .horizontal  // Allows horizontal swipe to change months
-
+            
             // Event indicators
             calendar.appearance.eventDefaultColor = .red  // Set color for event dots
-            } else {
-                print("Calendar is not connected in storyboard.")
-            }
+        } else {
+            print("Calendar is not connected in storyboard.")
+        }
         
         
-
-            
-                /*Header customization
-                calendar.appearance.headerMinimumDissolvedAlpha = 0.0  // Fully visible navigation arrows
-                calendar.appearance.headerDateFormat = "MMMM yyyy"  // Format for header text
-                
-                // Weekday appearance
-                calendar.appearance.weekdayTextColor = .blue  // Set weekday text color
-                calendar.appearance.weekdayFont = UIFont.boldSystemFont(ofSize: 16)  // Bold weekday font
-                
-                // Event indicators
-                calendar.appearance.eventDefaultColor = .red  // Set color for event dots
-            */
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDayDetails",  // Matches the storyboard
+        if segue.identifier == "showDayDetails",  // Make sure it matches the storyboard identifier
            let destinationVC = segue.destination as? DayDetailsViewController,
            let selectedDate = sender as? Date {
             destinationVC.selectedDate = selectedDate  // Pass the selected date
         }
     }
+
 
 
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B2320822BE0298100C13E6F /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2320812BE0298100C13E6F /* DayDetailsViewController.swift */; };
+		1B2320882BE0493900C13E6F /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2320872BE0493900C13E6F /* AddEventViewController.swift */; };
+		1B23208A2BE0496500C13E6F /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2320892BE0496500C13E6F /* EventManager.swift */; };
 		2C72EFA3B455757D99E22B35 /* Pods_Heads_Up__2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A3C4E6EFC27CEB8C7B34D4 /* Pods_Heads_Up__2Tests.framework */; };
 		980C3DC6CEA4CFC19CB01E6A /* Pods_Heads_Up__2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C600D8202F9A9CE4B9C44E81 /* Pods_Heads_Up__2.framework */; };
 		F9D76DE32BD5B92F00893236 /* Heads_Up__2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D76DE22BD5B92F00893236 /* Heads_Up__2App.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		172A80854D8FCF266EE27229 /* Pods_Heads_Up__2_Heads_Up__2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heads_Up__2_Heads_Up__2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2320812BE0298100C13E6F /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
+		1B2320872BE0493900C13E6F /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		1B2320892BE0496500C13E6F /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		34198E83150F60840E95309A /* Pods-Heads Up #2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heads Up #2Tests.release.xcconfig"; path = "Target Support Files/Pods-Heads Up #2Tests/Pods-Heads Up #2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		867CA0342002D122E1234C7C /* Pods-Heads Up #2-Heads Up #2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heads Up #2-Heads Up #2UITests.release.xcconfig"; path = "Target Support Files/Pods-Heads Up #2-Heads Up #2UITests/Pods-Heads Up #2-Heads Up #2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A302EDDC968E69C44281A0F6 /* Pods-Heads Up #2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heads Up #2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Heads Up #2Tests/Pods-Heads Up #2Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				F9D76E102BD5C8A200893236 /* MyViewController.swift */,
+				1B2320892BE0496500C13E6F /* EventManager.swift */,
+				1B2320872BE0493900C13E6F /* AddEventViewController.swift */,
 				1B2320812BE0298100C13E6F /* DayDetailsViewController.swift */,
 				F9D76E0E2BD5BFEF00893236 /* Screen.storyboard */,
 				F9DBE2572BDF055B00381B6B /* Experience */,
@@ -450,7 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B23208A2BE0496500C13E6F /* EventManager.swift in Sources */,
 				F9D76DE52BD5B92F00893236 /* ContentView.swift in Sources */,
+				1B2320882BE0493900C13E6F /* AddEventViewController.swift in Sources */,
 				F9D76DE72BD5B92F00893236 /* Item.swift in Sources */,
 				1B2320822BE0298100C13E6F /* DayDetailsViewController.swift in Sources */,
 				F9D76E112BD5C8A200893236 /* MyViewController.swift in Sources */,
