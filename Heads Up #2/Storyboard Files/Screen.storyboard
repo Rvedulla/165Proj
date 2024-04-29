@@ -237,7 +237,7 @@
         <!--Terms of Service-->
         <scene sceneID="dta-QW-m4m">
             <objects>
-                <viewController title="Terms of Service" id="rOB-Tq-43m" sceneMemberID="viewController">
+                <viewController title="Terms of Service" id="rOB-Tq-43m" customClass="MyViewController" customModule="Heads_Up__2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TP3-6X-gO7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,6 +254,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="https://www.termsfeed.com/live/ad71ad7a-f544-4e1f-b9e4-47c42612cfd6"/>
+                                <connections>
+                                    <action selector="openWebsite:" destination="rOB-Tq-43m" eventType="touchUpInside" id="zKc-h3-k81"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="89Z-7K-Nwx"/>

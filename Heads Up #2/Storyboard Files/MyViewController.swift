@@ -55,7 +55,11 @@ class MyViewController: UIViewController, FSCalendarDelegate{
     
     
     
-    
+    @IBAction func openWebsite(_ sender: Any) {
+            if let url = URL(string: "https://www.termsfeed.com/live/ad71ad7a-f544-4e1f-b9e4-47c42612cfd6") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
     @IBAction func ToUpcomingEvents(_ sender: UIButton) {
     }
     @IBAction func TOCalendar(_ sender: UIButton) {
